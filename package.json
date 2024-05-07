@@ -2,7 +2,7 @@
     "name": "sveltekit",
     "version": "0.0.0",
     "type": "module",
-    "packageManager": "pnpm@9.0.6",
+    "packageManager": "pnpm@9.1.0",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
