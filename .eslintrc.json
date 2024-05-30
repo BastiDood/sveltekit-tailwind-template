@@ -100,7 +100,7 @@
         "radix": "error",
         "require-await": "error",
         "sort-imports": ["error", { "allowSeparatedGroups": true }],
-        "spaced-comment": "warn",
+        "spaced-comment": ["error", "always", { "markers": ["/"] }],
         "yoda": ["warn", "never", { "exceptRange": true }]
     }
 }
