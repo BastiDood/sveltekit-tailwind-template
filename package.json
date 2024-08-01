@@ -17,7 +17,7 @@
         "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
     },
     "devDependencies": {
-        "@linthtml/linthtml": "^0.9.6",
+        "@linthtml/linthtml": "^0.10.1",
         "@linthtml/linthtml-config-recommended": "^0.1.0",
         "@sveltejs/adapter-static": "^3.0.2",
         "@sveltejs/kit": "^2.5.18",
