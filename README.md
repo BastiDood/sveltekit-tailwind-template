@@ -39,5 +39,5 @@ pnpm lint:js     # eslint
 pnpm lint:svelte # svelte-check
 
 # Check All Lints
-pnpm lint
+pnpm --parallel '/^lint:/'
 ```
