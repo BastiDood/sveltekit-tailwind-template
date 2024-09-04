@@ -48,6 +48,9 @@ importers:
       eslint-plugin-svelte:
         specifier: ^2.43.0
         version: 2.43.0(eslint@9.9.1(jiti@1.21.6))(svelte@4.2.19)
+      globals:
+        specifier: ^14.0.0
+        version: 14.0.0
       prettier:
         specifier: ^3.3.3
         version: 3.3.3

@@ -20,6 +20,7 @@ export default tsEslint.config(
         },
     },
     {
+        languageOptions: { globals: { ...globals.browser, ...globals.node } },
         rules: {
             '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
             'no-constant-binary-expression': 'error',
@@ -107,17 +108,6 @@ export default tsEslint.config(
             yoda: ['warn', 'never', { exceptRange: true }],
         },
     },
-    {
-        ignores: [
-            '.svelte-kit/**/*',
-            'build/**/*',
-            'node_modules/**/*',
-            '.DS_Store',
-            '.env',
-            '.env.*',
-            '!.env.example',
-            'pnpm-lock.yaml',
-        ],
-    },
+    { ignores: ['.svelte-kit/**/*', 'build/**/*', 'node_modules/**/*'] },
     eslintPrettierConfig,
 );
