@@ -38,6 +38,6 @@ pnpm lint:css    # stylelint
 pnpm lint:js     # eslint
 pnpm lint:svelte # svelte-check
 
-# Check All Lints
-pnpm --parallel '/^lint:/'
+# Check All Lints in Parallel
+pnpm lint
 ```

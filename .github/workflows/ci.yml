@@ -33,6 +33,6 @@ jobs:
       - name: Synchronize SvelteKit
         run: pnpm sync
       - name: Run All Lints in Parallel
-        run: pnpm --parallel '/^lint:/'
+        run: pnpm lint
       - name: Build Website
         run: pnpm build

@@ -11,6 +11,7 @@
         "sync": "svelte-kit sync",
         "fmt": "prettier --check .",
         "fmt:fix": "prettier --write .",
+        "lint": "pnpm run --parallel /lint:/",
         "lint:html": "linthtml src/**/*.html",
         "lint:css": "stylelint src/**/*.css",
         "lint:js": "eslint",
