@@ -1,6 +1,6 @@
 # Checklist
 
--   [ ] Update the project `name` in the [`package.json`](./package.json).
+- [ ] Update the project `name` in the [`package.json`](./package.json).
 
 # Development
 
