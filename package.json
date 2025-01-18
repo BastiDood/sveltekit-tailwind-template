@@ -18,8 +18,8 @@
         "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
     },
     "dependencies": {
-        "@sveltejs/kit": "^2.15.2",
-        "svelte": "^5.18.0"
+        "@sveltejs/kit": "^2.16.0",
+        "svelte": "^5.19.0"
     },
     "devDependencies": {
         "@eslint/js": "^9.18.0",
@@ -34,7 +34,7 @@
         "globals": "^15.14.0",
         "prettier": "^3.4.2",
         "prettier-plugin-svelte": "^3.3.3",
-        "prettier-plugin-tailwindcss": "^0.6.9",
+        "prettier-plugin-tailwindcss": "^0.6.10",
         "stylelint": "^16.13.2",
         "stylelint-config-standard": "^37.0.0",
         "stylelint-config-tailwindcss": "^0.0.7",
