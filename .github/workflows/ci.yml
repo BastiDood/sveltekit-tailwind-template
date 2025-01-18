@@ -30,8 +30,6 @@ jobs:
         run: pnpm install
       - name: Check Formatters
         run: pnpm fmt
-      - name: Synchronize SvelteKit
-        run: pnpm sync
       - name: Run All Lints in Parallel
         run: pnpm lint
       - name: Build Website
