@@ -7,8 +7,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "prepare": "svelte-kit sync",
         "preview": "vite preview",
-        "sync": "svelte-kit sync",
         "fmt": "prettier --check .",
         "fmt:fix": "prettier --write .",
         "lint": "pnpm run --parallel /lint:/",

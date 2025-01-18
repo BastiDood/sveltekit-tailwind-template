@@ -11,7 +11,7 @@
 pnpm install
 
 # Synchronize auto-generated files from SvelteKit.
-pnpm sync
+pnpm prepare
 
 # Start the development server with live reloading + hot module replacement.
 pnpm dev
