@@ -10,7 +10,8 @@ import svelteConfig from './svelte.config.js';
 export default ts.config(
     { ignores: ['.svelte-kit/**/*', 'build/**/*', 'node_modules/**/*'] },
     js.configs.recommended,
-    ...ts.configs.recommended,
+    ...ts.configs.strict,
+    ...ts.configs.stylistic,
     ...svelte.configs.recommended,
     prettier,
     ...svelte.configs.prettier,
