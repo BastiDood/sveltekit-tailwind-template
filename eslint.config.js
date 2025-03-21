@@ -44,7 +44,6 @@ export default ts.config(
             '@typescript-eslint/prefer-enum-initializers': 'error',
             'array-callback-return': ['error', { checkForEach: true }],
             'block-scoped-var': 'error',
-            camelcase: ['error'],
             'class-methods-use-this': 'off',
             'consistent-this': ['error', 'self'],
             curly: ['error', 'multi'],
