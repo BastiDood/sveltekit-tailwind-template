@@ -12,7 +12,6 @@
         "fmt": "prettier --check .",
         "fmt:fix": "prettier --write .",
         "lint": "pnpm run --parallel /lint:/",
-        "lint:html": "linthtml src/**/*.html",
         "lint:js": "eslint",
         "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
     },
@@ -23,8 +22,6 @@
     "devDependencies": {
         "@eslint/css": "^0.7.0",
         "@eslint/js": "^9.25.1",
-        "@linthtml/linthtml": "^0.10.2",
-        "@linthtml/linthtml-config-recommended": "^0.2.0",
         "@sveltejs/adapter-static": "^3.0.8",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
         "@tailwindcss/vite": "^4.1.4",
