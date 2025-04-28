@@ -1,34 +1,31 @@
 import globals from 'globals';
 
+import css from '@eslint/css';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
 import ts from 'typescript-eslint';
 
+import { tailwindSyntax } from '@eslint/css/syntax';
+
 import svelteConfig from './svelte.config.js';
 
 export default ts.config(
     { ignores: ['.svelte-kit/**/*', 'build/**/*', 'node_modules/**/*'] },
-    js.configs.recommended,
-    ...ts.configs.strict,
-    ...ts.configs.stylistic,
-    ...svelte.configs.recommended,
-    prettier,
-    ...svelte.configs.prettier,
     { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
     {
-        files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
-        ignores: ['eslint.config.js', 'svelte.config.js'],
-        languageOptions: {
-            parserOptions: {
-                projectService: true,
-                extraFileExtensions: ['.svelte'],
-                parser: ts.parser,
-                svelteConfig,
-            },
+        files: ['src/**/*.css'],
+        plugins: { css },
+        language: 'css/css',
+        languageOptions: { customSyntax: tailwindSyntax },
+        rules: {
+            ...css.configs.recommended.rules,
+            'css/prefer-logical-properties': 'error',
         },
     },
     {
+        files: ['**/*.js', '**/*.ts'],
+        extends: [js.configs.recommended, ...ts.configs.recommended, ...ts.configs.stylistic, prettier],
         rules: {
             '@typescript-eslint/class-methods-use-this': 'error',
             '@typescript-eslint/default-param-last': 'error',
@@ -136,6 +133,18 @@ export default ts.config(
             'sort-imports': ['error', { allowSeparatedGroups: true }],
             'symbol-description': 'error',
             yoda: ['warn', 'never', { exceptRange: true }],
+        },
+    },
+    {
+        files: ['src/**/*.svelte', 'src/**/*.svelte.ts', 'src/**/*.svelte.js'],
+        extends: [...svelte.configs.recommended, ...svelte.configs.prettier],
+        languageOptions: {
+            parserOptions: {
+                projectService: true,
+                extraFileExtensions: ['.svelte'],
+                parser: ts.parser,
+                svelteConfig,
+            },
         },
     },
 );

@@ -13,7 +13,6 @@
         "fmt:fix": "prettier --write .",
         "lint": "pnpm run --parallel /lint:/",
         "lint:html": "linthtml src/**/*.html",
-        "lint:css": "stylelint src/**/*.css",
         "lint:js": "eslint",
         "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
     },
@@ -22,6 +21,7 @@
         "svelte": "^5.28.2"
     },
     "devDependencies": {
+        "@eslint/css": "^0.7.0",
         "@eslint/js": "^9.25.1",
         "@linthtml/linthtml": "^0.10.2",
         "@linthtml/linthtml-config-recommended": "^0.2.0",
@@ -35,9 +35,6 @@
         "prettier": "^3.5.3",
         "prettier-plugin-svelte": "^3.3.3",
         "prettier-plugin-tailwindcss": "^0.6.11",
-        "stylelint": "^16.19.1",
-        "stylelint-config-standard": "^38.0.0",
-        "stylelint-config-tailwindcss": "^1.0.0",
         "svelte-check": "^4.1.6",
         "tailwindcss": "^4.1.4",
         "typescript": "^5.8.3",
