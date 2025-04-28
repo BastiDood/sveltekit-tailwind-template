@@ -18,32 +18,32 @@
         "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
     },
     "dependencies": {
-        "@sveltejs/kit": "^2.20.5",
-        "svelte": "^5.25.12"
+        "@sveltejs/kit": "^2.20.7",
+        "svelte": "^5.28.2"
     },
     "devDependencies": {
-        "@eslint/js": "^9.24.0",
+        "@eslint/js": "^9.25.1",
         "@linthtml/linthtml": "^0.10.2",
         "@linthtml/linthtml-config-recommended": "^0.2.0",
         "@sveltejs/adapter-static": "^3.0.8",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
-        "@tailwindcss/vite": "^4.1.3",
-        "eslint": "^9.24.0",
+        "@tailwindcss/vite": "^4.1.4",
+        "eslint": "^9.25.1",
         "eslint-config-prettier": "^10.1.2",
         "eslint-plugin-svelte": "^3.5.1",
         "globals": "^16.0.0",
         "prettier": "^3.5.3",
         "prettier-plugin-svelte": "^3.3.3",
         "prettier-plugin-tailwindcss": "^0.6.11",
-        "stylelint": "^16.18.0",
+        "stylelint": "^16.19.1",
         "stylelint-config-standard": "^38.0.0",
         "stylelint-config-tailwindcss": "^1.0.0",
-        "svelte-check": "^4.1.5",
-        "tailwindcss": "^4.1.3",
+        "svelte-check": "^4.1.6",
+        "tailwindcss": "^4.1.4",
         "typescript": "^5.8.3",
-        "typescript-eslint": "^8.29.1",
+        "typescript-eslint": "^8.31.1",
         "typescript-svelte-plugin": "^0.3.46",
-        "vite": "^6.2.6"
+        "vite": "^6.3.3"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
