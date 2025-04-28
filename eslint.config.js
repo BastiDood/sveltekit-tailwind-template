@@ -43,7 +43,7 @@ export default ts.config(
             'block-scoped-var': 'error',
             'class-methods-use-this': 'off',
             'consistent-this': ['error', 'self'],
-            curly: ['error', 'multi'],
+            curly: ['error', 'multi', 'consistent'],
             'default-case': 'error',
             'default-param-last': 'off',
             'dot-notation': 'error',
