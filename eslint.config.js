@@ -14,7 +14,7 @@ export default ts.config(
     { ignores: ['.svelte-kit/**/*', 'build/**/*', 'node_modules/**/*'] },
     { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
     {
-        files: ['src/**/*.css'],
+        files: ['**/*.css'],
         plugins: { css },
         language: 'css/css',
         languageOptions: { customSyntax: tailwindSyntax },
@@ -24,7 +24,7 @@ export default ts.config(
         },
     },
     {
-        files: ['**/*.js', '**/*.ts'],
+        files: ['**/*.js', '**/*.ts', '**/*.svelte'],
         extends: [js.configs.recommended, ...ts.configs.recommended, ...ts.configs.stylistic, prettier],
         rules: {
             '@typescript-eslint/class-methods-use-this': 'error',
@@ -136,7 +136,7 @@ export default ts.config(
         },
     },
     {
-        files: ['src/**/*.svelte', 'src/**/*.svelte.ts', 'src/**/*.svelte.js'],
+        files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
         extends: [...svelte.configs.recommended, ...svelte.configs.prettier],
         languageOptions: {
             parserOptions: {
