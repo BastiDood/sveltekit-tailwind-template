@@ -12,7 +12,7 @@
     "fmt": "prettier --check .",
     "fmt:fix": "prettier --write .",
     "lint": "pnpm run --parallel /lint:/",
-    "lint:js": "eslint",
+    "lint:eslint": "eslint",
     "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
