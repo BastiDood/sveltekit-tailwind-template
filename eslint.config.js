@@ -21,6 +21,7 @@ export default ts.config(
     rules: {
       ...css.configs.recommended.rules,
       'css/prefer-logical-properties': 'error',
+      'css/no-invalid-at-rules': 'off',
     },
   },
   {
