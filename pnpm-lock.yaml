@@ -21,6 +21,12 @@ importers:
       '@eslint/js':
         specifier: ~9.25.1
         version: 9.25.1
+      '@html-eslint/eslint-plugin':
+        specifier: ^0.40.3
+        version: 0.40.3
+      '@html-eslint/parser':
+        specifier: ^0.40.0
+        version: 0.40.0
       '@sveltejs/adapter-static':
         specifier: ^3.0.8
         version: 3.0.8(@sveltejs/kit@2.21.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.6)(vite@6.3.5(jiti@2.4.2)(lightningcss@1.29.2)))(svelte@5.28.6)(vite@6.3.5(jiti@2.4.2)(lightningcss@1.29.2)))
@@ -271,6 +277,18 @@ packages:
   '@eslint/plugin-kit@0.2.8':
     resolution: {integrity: sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@html-eslint/eslint-plugin@0.40.3':
+    resolution: {integrity: sha512-ju0BTpo60/NOqh2VIQzBz2d+cekzmvqJZ2BHFRfg3oDQqWzp8nIrgNiKws0ILfs82su/w4zZBqKtMMQp4WvsvQ==}
+
+  '@html-eslint/parser@0.40.0':
+    resolution: {integrity: sha512-xvySQLPogafK2aTOPBD6V7+4qpr1AnOZXO8zM2z0b4i3BB9ISk5PTWu5+ofOekKxjxUh7Z+QWaoezu1SIi33YA==}
+
+  '@html-eslint/template-parser@0.40.0':
+    resolution: {integrity: sha512-f1S70T88yRe3zStT0CiDDgRw24Fgi1wgbW74YNUocEVuXvh2snxBEufY46Yg2udGlOz+SnQaygshacW45L+JWw==}
+
+  '@html-eslint/template-syntax-parser@0.40.0':
+    resolution: {integrity: sha512-Rq3UmjiWreKnXrN95Nt6vLlKgQrV8PhoYrlADn3u7X7vtgCccTmjV6aUHJCw7AyNXmcSNNpN2KPsBmQfH3y58A==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -722,6 +740,9 @@ packages:
   enhanced-resolve@5.18.1:
     resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
     engines: {node: '>=10.13.0'}
+
+  es-html-parser@0.2.0:
+    resolution: {integrity: sha512-snJ7uJC8Dkx/yT0eYZrWcY57rkPU6Zui6YphPynw8r52AWf57gjqMC0GWe7OxSDipwXowFpa3rqckEeAPTOz7w==}
 
   esbuild@0.25.4:
     resolution: {integrity: sha512-8pgjLUcUjcgDg+2Q4NYXnPbo/vncAY4UmyaCm0jZevERqCHZIaWwdJHkf8XQtu4AxSKCdvrUbT0XUr1IdZzI8Q==}
@@ -1568,6 +1589,24 @@ snapshots:
       '@eslint/core': 0.13.0
       levn: 0.4.1
 
+  '@html-eslint/eslint-plugin@0.40.3':
+    dependencies:
+      '@eslint/plugin-kit': 0.2.8
+      '@html-eslint/parser': 0.40.0
+      '@html-eslint/template-parser': 0.40.0
+      '@html-eslint/template-syntax-parser': 0.40.0
+
+  '@html-eslint/parser@0.40.0':
+    dependencies:
+      '@html-eslint/template-syntax-parser': 0.40.0
+      es-html-parser: 0.2.0
+
+  '@html-eslint/template-parser@0.40.0':
+    dependencies:
+      es-html-parser: 0.2.0
+
+  '@html-eslint/template-syntax-parser@0.40.0': {}
+
   '@humanfs/core@0.19.1': {}
 
   '@humanfs/node@0.16.6':
@@ -1967,6 +2006,8 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.1
+
+  es-html-parser@0.2.0: {}
 
   esbuild@0.25.4:
     optionalDependencies:

@@ -1,18 +1,60 @@
 import globals from 'globals';
 
 import css from '@eslint/css';
+import html from '@html-eslint/eslint-plugin';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
 import ts from 'typescript-eslint';
 
+import { defineConfig } from 'eslint/config';
 import { tailwindSyntax } from '@eslint/css/syntax';
 
 import svelteConfig from './svelte.config.js';
 
-export default ts.config(
+export default defineConfig(
   { ignores: ['.svelte-kit/**/*', 'build/**/*', 'node_modules/**/*'] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  {
+    ...html.configs['flat/recommended'],
+    files: ['**/*.html'],
+    rules: {
+      ...html.configs['flat/recommended'].rules,
+      '@html-eslint/indent': 'off',
+      '@html-eslint/no-duplicate-class': 'error',
+      '@html-eslint/no-extra-spacing-attrs': [
+        'error',
+        {
+          enforceBeforeSelfClose: true,
+          disallowMissing: true,
+          disallowTabs: true,
+          disallowInAssignment: true,
+        },
+      ],
+      '@html-eslint/no-extra-spacing-text': 'error',
+      '@html-eslint/no-inline-styles': 'error',
+      '@html-eslint/no-nested-interactive': 'error',
+      '@html-eslint/no-script-style-type': 'error',
+      '@html-eslint/no-target-blank': 'error',
+      '@html-eslint/prefer-https': 'error',
+      '@html-eslint/require-button-type': 'error',
+      '@html-eslint/require-closing-tags': 'off',
+      '@html-eslint/require-explicit-size': 'error',
+      '@html-eslint/require-meta-charset': 'error',
+      '@html-eslint/no-abstract-roles': 'error',
+      '@html-eslint/no-accesskey-attrs': 'error',
+      '@html-eslint/no-aria-hidden-body': 'error',
+      '@html-eslint/no-heading-inside-button': 'error',
+      '@html-eslint/no-invalid-role': 'error',
+      '@html-eslint/no-non-scalable-viewport': 'error',
+      '@html-eslint/no-positive-tabindex': 'error',
+      '@html-eslint/no-skip-heading-levels': 'error',
+      '@html-eslint/require-form-method': 'error',
+      '@html-eslint/require-frame-title': 'error',
+      '@html-eslint/require-input-label': 'error',
+      '@html-eslint/require-meta-viewport': 'error',
+    },
+  },
   {
     files: ['**/*.css'],
     plugins: { css },
