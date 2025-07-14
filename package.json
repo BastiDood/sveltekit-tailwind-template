@@ -11,13 +11,13 @@
     "preview": "vite preview",
     "fmt": "prettier --experimental-cli . --check",
     "fmt:fix": "prettier --experimental-cli . --write",
-    "lint": "pnpm run --parallel /lint:/",
+    "lint": "pnpm run --workspace-root --parallel /lint:/",
     "lint:eslint": "eslint --cache",
     "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.22.5",
-    "svelte": "^5.35.6"
+    "@sveltejs/kit": "^2.23.0",
+    "svelte": "^5.36.0"
   },
   "devDependencies": {
     "@eslint/css": "^0.9.0",
@@ -37,14 +37,8 @@
     "svelte-check": "^4.2.2",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.36.0",
+    "typescript-eslint": "^8.37.0",
     "typescript-svelte-plugin": "^0.3.48",
     "vite": "^7.0.4"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
-      "esbuild"
-    ]
   }
 }
