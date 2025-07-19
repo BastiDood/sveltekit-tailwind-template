@@ -1,5 +1,4 @@
 /** @import { Config } from '@sveltejs/kit' */
-
 import adapter from '@sveltejs/adapter-static';
 
 /** @type {Config} */
