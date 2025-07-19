@@ -16,8 +16,8 @@
     "lint:svelte": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.23.0",
-    "svelte": "^5.36.0"
+    "@sveltejs/kit": "^2.25.1",
+    "svelte": "^5.36.8"
   },
   "devDependencies": {
     "@eslint/css": "^0.9.0",
@@ -27,17 +27,17 @@
     "@sveltejs/adapter-static": "^3.0.8",
     "@tailwindcss/vite": "^4.1.11",
     "eslint": "^9.31.0",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-svelte": "^3.10.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-svelte": "^3.11.0",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
     "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "svelte-check": "^4.2.2",
+    "svelte-check": "^4.3.0",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.37.0",
-    "typescript-svelte-plugin": "^0.3.48",
-    "vite": "^7.0.4"
+    "typescript-svelte-plugin": "^0.3.49",
+    "vite": "^7.0.5"
   }
 }
