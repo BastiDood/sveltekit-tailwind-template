@@ -1,14 +1,13 @@
-import globals from 'globals';
-
+import imsort from '@bastidood/eslint-plugin-imsort';
 import css from '@eslint/css';
-import html from '@html-eslint/eslint-plugin';
 import js from '@eslint/js';
+import html from '@html-eslint/eslint-plugin';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
+import globals from 'globals';
 import ts from 'typescript-eslint';
-
-import { defineConfig } from 'eslint/config';
 import { tailwindSyntax } from '@eslint/css/syntax';
+import { defineConfig } from 'eslint/config';
 
 import svelteConfig from './svelte.config.js';
 
@@ -68,8 +67,16 @@ export default defineConfig(
   },
   {
     files: ['**/*.js', '**/*.ts', '**/*.svelte'],
-    extends: [js.configs.recommended, ...ts.configs.recommended, ...ts.configs.stylistic, prettier],
+    extends: [
+      js.configs.recommended,
+      ...ts.configs.recommended,
+      ...ts.configs.stylistic,
+      imsort.configs.all,
+      prettier,
+    ],
+    plugins: { '@bastidood/imsort': imsort },
     rules: {
+      '@bastidood/imsort/sort-imports': 'error',
       '@typescript-eslint/class-methods-use-this': 'error',
       '@typescript-eslint/default-param-last': 'error',
       '@typescript-eslint/init-declarations': 'error',
@@ -176,7 +183,6 @@ export default defineConfig(
       'require-atomic-updates': 'error',
       'require-await': 'error',
       'require-unicode-regexp': 'error',
-      'sort-imports': ['error', { allowSeparatedGroups: true }],
       'symbol-description': 'error',
       yoda: ['warn', 'never', { exceptRange: true }],
     },
