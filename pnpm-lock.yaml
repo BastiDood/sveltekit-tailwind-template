@@ -16,8 +16,8 @@ importers:
         version: 5.36.17
     devDependencies:
       '@bastidood/eslint-plugin-imsort':
-        specifier: ^0.5.0
-        version: 0.5.0
+        specifier: ^0.9.0
+        version: 0.9.0
       '@eslint/css':
         specifier: ^0.9.0
         version: 0.9.0
@@ -79,8 +79,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@bastidood/eslint-plugin-imsort@0.5.0':
-    resolution: {integrity: sha512-VsUI00ZiZLFSb5KP+ewiDAH6qmvUnbRCMdkTorHryFnPYkKo/Usib0xTJ4iFy78OV0aOBVLxWpSpd0AXubwMVA==}
+  '@bastidood/eslint-plugin-imsort@0.9.0':
+    resolution: {integrity: sha512-bROzavoUKpARku9CbRJz6CNVWO4N7r8//286DAu5/rQVTljysbLw8l7A8tkTAgRVt3Dd9muLGNuFNxepmAKNcA==}
 
   '@esbuild/aix-ppc64@0.25.8':
     resolution: {integrity: sha512-urAvrUedIqEiFR3FYSLTWQgLu5tb+m0qZw0NBEasUeo6wuqatkMDaRT+1uABiGXEu5vqgPd7FGE1BhsAIy9QVA==}
@@ -1488,7 +1488,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.12
       '@jridgewell/trace-mapping': 0.3.29
 
-  '@bastidood/eslint-plugin-imsort@0.5.0':
+  '@bastidood/eslint-plugin-imsort@0.9.0':
     dependencies:
       itertools: 2.4.1
 
