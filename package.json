@@ -20,7 +20,7 @@
     "svelte": "^5.36.17"
   },
   "devDependencies": {
-    "@bastidood/eslint-plugin-imsort": "^0.4.1",
+    "@bastidood/eslint-plugin-imsort": "^0.5.0",
     "@eslint/css": "^0.9.0",
     "@eslint/js": "^9.32.0",
     "@html-eslint/eslint-plugin": "^0.43.1",

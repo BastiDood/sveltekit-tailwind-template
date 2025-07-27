@@ -1,13 +1,13 @@
-import imsort from '@bastidood/eslint-plugin-imsort';
 import css from '@eslint/css';
-import js from '@eslint/js';
+import globals from 'globals';
 import html from '@html-eslint/eslint-plugin';
+import imsort from '@bastidood/eslint-plugin-imsort';
+import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
-import globals from 'globals';
 import ts from 'typescript-eslint';
-import { tailwindSyntax } from '@eslint/css/syntax';
 import { defineConfig } from 'eslint/config';
+import { tailwindSyntax } from '@eslint/css/syntax';
 
 import svelteConfig from './svelte.config.js';
 
