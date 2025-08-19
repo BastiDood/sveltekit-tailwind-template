@@ -1,3 +1,5 @@
+cleanupUnusedCatalogs: true
+
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - esbuild
