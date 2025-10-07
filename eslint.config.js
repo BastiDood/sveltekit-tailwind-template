@@ -7,7 +7,7 @@ import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
 import ts from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
-import { tailwindSyntax } from '@eslint/css/syntax';
+import { tailwind4 } from 'tailwind-csstree';
 
 import svelteConfig from './svelte.config.js';
 
@@ -58,7 +58,7 @@ export default defineConfig(
     files: ['**/*.css'],
     plugins: { css },
     language: 'css/css',
-    languageOptions: { customSyntax: tailwindSyntax },
+    languageOptions: { customSyntax: tailwind4 },
     rules: {
       ...css.configs.recommended.rules,
       'css/prefer-logical-properties': 'error',

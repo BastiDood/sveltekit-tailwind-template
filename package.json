@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@bastidood/eslint-plugin-imsort": "^0.10.1",
-    "@eslint/css": "^0.9.0",
+    "@eslint/css": "^0.12.0",
     "@eslint/js": "^9.37.0",
     "@html-eslint/eslint-plugin": "^0.47.0",
     "@sveltejs/adapter-static": "^3.0.10",
@@ -34,6 +34,7 @@
     "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "svelte-check": "^4.3.2",
+    "tailwind-csstree": "^0.1.4",
     "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.0",
