@@ -9,7 +9,7 @@
   "overrides": [
     { "files": ["tsconfig.json", "jsconfig.json"], "options": { "parser": "jsonc" } },
     {
-      "files": "*.svelte",
+      "files": "**/*.svelte",
       "options": {
         "parser": "svelte",
         "svelteAllowShorthand": true
