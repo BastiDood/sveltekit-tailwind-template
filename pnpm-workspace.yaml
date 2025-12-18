@@ -1,5 +1,13 @@
 cleanupUnusedCatalogs: true
 
+engineStrict: true
+
+minimumReleaseAge: 1440 # 1 Day
+
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - esbuild
+
+strictDepBuilds: true
+
+trustPolicy: no-downgrade
