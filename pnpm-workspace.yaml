@@ -11,3 +11,6 @@ onlyBuiltDependencies:
 strictDepBuilds: true
 
 trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - chokidar@4.0.3
