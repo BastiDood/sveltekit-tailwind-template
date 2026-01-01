@@ -23,7 +23,7 @@
     "@bastidood/eslint-plugin-imsort": "^0.10.1",
     "@eslint/css": "^0.14.1",
     "@eslint/js": "^9.39.2",
-    "@html-eslint/eslint-plugin": "^0.52.0",
+    "@html-eslint/eslint-plugin": "^0.52.1",
     "@sveltejs/adapter-static": "^3.0.10",
     "@tailwindcss/vite": "^4.1.18",
     "eslint": "^9.39.2",
@@ -37,7 +37,7 @@
     "tailwind-csstree": "^0.1.4",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.50.1",
+    "typescript-eslint": "^8.51.0",
     "typescript-svelte-plugin": "^0.3.50",
     "vite": "^7.3.0"
   }
