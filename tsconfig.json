@@ -1,5 +1,4 @@
 {
-  // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias.
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
     "strict": true,
@@ -11,6 +10,6 @@
     "skipLibCheck": true,
     "moduleDetection": "force",
     "resolveJsonModule": true,
-    "plugins": [{ "name": "typescript-svelte-plugin" }],
-  },
+    "plugins": [{ "name": "typescript-svelte-plugin" }]
+  }
 }

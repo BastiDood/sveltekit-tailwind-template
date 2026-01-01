@@ -7,7 +7,6 @@
   "trailingComma": "all",
   "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
   "overrides": [
-    { "files": ["tsconfig.json", "jsconfig.json"], "options": { "parser": "jsonc" } },
     {
       "files": "**/*.svelte",
       "options": {
