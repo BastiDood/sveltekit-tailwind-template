@@ -115,7 +115,7 @@ export default defineConfig(
       'no-div-regex': 'error',
       'no-duplicate-imports': 'error',
       'no-else-return': 'error',
-      'no-empty-function': 'error',
+      'no-empty-function': 'off', // already in typescript-eslint:stylistic
       'no-empty-static-block': 'error',
       'no-eq-null': 'error',
       'no-eval': 'error',
@@ -167,7 +167,7 @@ export default defineConfig(
       'one-var': ['error', 'never'],
       'operator-assignment': 'error',
       'prefer-arrow-callback': 'error',
-      'prefer-const': 'error',
+      'prefer-const': 'off',
       'prefer-destructuring': 'error',
       'prefer-exponentiation-operator': 'error',
       'prefer-named-capture-group': 'error',
@@ -199,5 +199,6 @@ export default defineConfig(
         svelteConfig,
       },
     },
+    rules: { 'svelte/prefer-const': 'error' },
   },
 );
