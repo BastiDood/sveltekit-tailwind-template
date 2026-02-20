@@ -3,6 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "noUncheckedIndexedAccess": true,
+    "noUncheckedSideEffectImports": true,
     "noImplicitOverride": true,
     "allowJs": true,
     "checkJs": true,
