@@ -6,6 +6,9 @@ engineStrict: true
 
 minimumReleaseAge: 1440 # 1 Day
 
+minimumReleaseAgeExclude:
+  - svelte-check@4.4.3
+
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - esbuild

@@ -13,7 +13,7 @@
     "fmt:fix": "prettier . --experimental-cli --write",
     "lint": "pnpm run --workspace-root --parallel /lint:/",
     "lint:eslint": "eslint --cache --concurrency auto",
-    "lint:svelte": "svelte-check"
+    "lint:svelte": "svelte-check --incremental"
   },
   "dependencies": {
     "@sveltejs/kit": "^2.52.2",
@@ -33,7 +33,7 @@
     "prettier": "^3.8.1",
     "prettier-plugin-svelte": "^3.5.0",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "svelte-check": "^4.4.1",
+    "svelte-check": "^4.4.3",
     "tailwind-csstree": "^0.1.4",
     "tailwindcss": "^4.2.0",
     "typescript-eslint": "^8.56.0",
