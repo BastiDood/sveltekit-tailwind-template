@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.30.1+sha512.3590e550d5384caa39bd5c7c739f72270234b2f6059e13018f975c313b1eb9fefcc09714048765d4d9efe961382c312e624572c0420762bdc5d5940cdf9be73a",
+  "packageManager": "pnpm@10.30.3+sha512.c961d1e0a2d8e354ecaa5166b822516668b7f44cb5bd95122d590dd81922f606f5473b6d23ec4a5be05e7fcd18e8488d47d978bbe981872f1145d06e9a740017",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,14 +16,14 @@
     "lint:svelte": "svelte-check --incremental"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.53.0",
-    "svelte": "^5.53.3"
+    "@sveltejs/kit": "^2.53.1",
+    "svelte": "^5.53.5"
   },
   "devDependencies": {
-    "@bastidood/eslint-plugin-imsort": "^0.11.0",
+    "@bastidood/eslint-plugin-imsort": "^0.12.0",
     "@eslint/css": "^0.14.1",
     "@eslint/js": "^10.0.1",
-    "@html-eslint/eslint-plugin": "^0.57.0",
+    "@html-eslint/eslint-plugin": "^0.57.1",
     "@sveltejs/adapter-static": "^3.0.10",
     "@tailwindcss/vite": "^4.2.1",
     "eslint": "^10.0.2",
