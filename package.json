@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.30.3+sha512.c961d1e0a2d8e354ecaa5166b822516668b7f44cb5bd95122d590dd81922f606f5473b6d23ec4a5be05e7fcd18e8488d47d978bbe981872f1145d06e9a740017",
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,26 +17,26 @@
   },
   "dependencies": {
     "@sveltejs/kit": "^2.53.4",
-    "svelte": "^5.53.7"
+    "svelte": "^5.53.9"
   },
   "devDependencies": {
     "@bastidood/eslint-plugin-imsort": "^0.12.0",
-    "@eslint/css": "^0.14.1",
+    "@eslint/css": "^1.0.0",
     "@eslint/js": "^10.0.1",
-    "@html-eslint/eslint-plugin": "^0.58.0",
+    "@html-eslint/eslint-plugin": "^0.58.1",
     "@sveltejs/adapter-static": "^3.0.10",
     "@tailwindcss/vite": "^4.2.1",
-    "eslint": "^10.0.2",
+    "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.15.0",
+    "eslint-plugin-svelte": "^3.15.2",
     "globals": "^16.5.0",
     "prettier": "^3.8.1",
     "prettier-plugin-svelte": "^3.5.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "svelte-check": "^4.4.4",
+    "svelte-check": "^4.4.5",
     "tailwind-csstree": "^0.1.4",
     "tailwindcss": "^4.2.1",
-    "typescript-eslint": "^8.56.1",
+    "typescript-eslint": "^8.57.0",
     "vite": "^7.3.1"
   }
 }
