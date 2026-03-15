@@ -16,8 +16,8 @@
     "lint:svelte": "svelte-check"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.53.4",
-    "svelte": "^5.53.9"
+    "@sveltejs/kit": "^2.55.0",
+    "svelte": "^5.53.12"
   },
   "devDependencies": {
     "@bastidood/eslint-plugin-imsort": "^0.12.0",
