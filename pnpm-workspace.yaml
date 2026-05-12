@@ -1,16 +1,11 @@
-blockExoticSubdeps: true
+allowBuilds:
+  esbuild: true
 
 cleanupUnusedCatalogs: true
 
 engineStrict: true
 
-minimumReleaseAge: 1440 # 1 Day
-
-onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - esbuild
-
-strictDepBuilds: true
+minimumReleaseAgeStrict: true
 
 trustPolicy: no-downgrade
 
