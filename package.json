@@ -15,8 +15,8 @@
     "lint:svelte": "svelte-check"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.59.1",
-    "svelte": "^5.55.5"
+    "@sveltejs/kit": "^2.61.0",
+    "svelte": "^5.55.9"
   },
   "devDependencies": {
     "@bastidood/eslint-plugin-imsort": "^0.12.0",
@@ -26,17 +26,17 @@
     "@sveltejs/adapter-static": "^3.0.10",
     "@tailwindcss/vite": "^4.3.0",
     "@types/node": "^24.12.4",
-    "eslint": "^10.3.0",
+    "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.17.1",
     "globals": "^16.5.0",
     "prettier": "^3.8.3",
-    "prettier-plugin-svelte": "^3.5.2",
+    "prettier-plugin-svelte": "^4.0.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "svelte-check": "^4.4.8",
-    "tailwind-csstree": "^0.3.1",
+    "tailwind-csstree": "^0.3.2",
     "tailwindcss": "^4.3.0",
-    "typescript-eslint": "^8.59.3",
-    "vite": "^8.0.12"
+    "typescript-eslint": "^8.59.4",
+    "vite": "^8.0.14"
   }
 }
