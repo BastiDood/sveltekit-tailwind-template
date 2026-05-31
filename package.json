@@ -8,8 +8,8 @@
     "build": "vite build",
     "prepare": "svelte-kit sync",
     "preview": "vite preview",
-    "fmt": "prettier . --experimental-cli --check",
-    "fmt:fix": "prettier . --experimental-cli --write",
+    "fmt": "prettier . --experimental-cli --cache-location .prettiercache --check",
+    "fmt:fix": "prettier . --experimental-cli --cache-location .prettiercache --write",
     "lint": "pnpm run --workspace-root --parallel /lint:/",
     "lint:eslint": "eslint --cache --concurrency auto",
     "lint:svelte": "svelte-check"
