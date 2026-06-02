@@ -12,7 +12,7 @@
     "fmt:fix": "prettier . --experimental-cli --cache-location .prettiercache --write",
     "lint": "pnpm run --workspace-root --parallel /lint:/",
     "lint:eslint": "eslint --cache --concurrency auto",
-    "lint:svelte": "svelte-check"
+    "lint:svelte": "svelte-check --fail-on-warnings"
   },
   "dependencies": {
     "@sveltejs/kit": "^2.61.1",
