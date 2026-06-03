@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@sveltejs/kit": "^2.61.1",
-    "svelte": "^5.56.0"
+    "svelte": "^5.56.1"
   },
   "devDependencies": {
     "@bastidood/eslint-plugin-imsort": "^0.12.0",
