@@ -15,7 +15,7 @@
     "lint:svelte": "svelte-check --fail-on-warnings"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.61.1",
+    "@sveltejs/kit": "^2.63.0",
     "svelte": "^5.56.1"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "prettier": "^3.8.3",
     "prettier-plugin-svelte": "^4.1.0",
     "prettier-plugin-tailwindcss": "^0.8.0",
-    "svelte-check": "^4.5.0",
+    "svelte-check": "^4.6.0",
     "tailwind-csstree": "^0.3.2",
     "tailwindcss": "^4.3.0",
     "typescript-eslint": "^8.60.1",
