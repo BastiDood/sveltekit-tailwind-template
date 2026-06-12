@@ -9,8 +9,6 @@ import ts from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
 import { tailwind4 } from 'tailwind-csstree';
 
-import svelteConfig from './svelte.config.js';
-
 export default defineConfig(
   { ignores: ['.svelte-kit/**/*', 'build/**/*', 'node_modules/**/*'] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
@@ -208,7 +206,6 @@ export default defineConfig(
         projectService: true,
         extraFileExtensions: ['.svelte'],
         parser: ts.parser,
-        svelteConfig,
       },
     },
     rules: {
