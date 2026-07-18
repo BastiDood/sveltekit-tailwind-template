@@ -80,7 +80,6 @@ export default defineConfig(
       '@typescript-eslint/init-declarations': 'error',
       '@typescript-eslint/method-signature-style': 'error',
       '@typescript-eslint/no-import-type-side-effects': 'error',
-      '@typescript-eslint/no-loop-func': 'error',
       '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
       '@typescript-eslint/no-unused-vars': [
         'error',
@@ -128,7 +127,7 @@ export default defineConfig(
       'no-label-var': 'error',
       'no-lone-blocks': 'error',
       'no-lonely-if': 'error',
-      'no-loop-func': 'off',
+      'no-loop-func': 'error',
       'no-multi-assign': 'error',
       'no-negated-condition': 'error',
       'no-nested-ternary': 'warn',
