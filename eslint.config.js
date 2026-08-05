@@ -1,6 +1,7 @@
 import css from '@eslint/css';
 import globals from 'globals';
 import html from '@html-eslint/eslint-plugin';
+import htmlSvelte from '@html-eslint/eslint-plugin-svelte';
 import imsort from '@bastidood/eslint-plugin-imsort';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
@@ -229,7 +230,11 @@ export default defineConfig(
   },
   {
     files: SVELTE_FILES,
-    extends: [...svelte.configs.recommended, ...svelte.configs.prettier],
+    extends: [
+      ...svelte.configs.recommended,
+      htmlSvelte.configs.recommended,
+      ...svelte.configs.prettier,
+    ],
     languageOptions: {
       parserOptions: {
         ...TYPED_PARSER_OPTIONS,

@@ -27,6 +27,9 @@ importers:
       '@html-eslint/eslint-plugin':
         specifier: ^0.64.0
         version: 0.64.0(eslint@10.8.0(jiti@2.7.0))
+      '@html-eslint/eslint-plugin-svelte':
+        specifier: ^0.64.0
+        version: 0.64.0(eslint@10.8.0(jiti@2.7.0))(svelte-eslint-parser@1.8.0(svelte@5.56.8(@typescript-eslint/types@8.66.0)))
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
         version: 3.0.10(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.56.8(@typescript-eslint/types@8.66.0))(vite@8.2.0(@types/node@26.1.2)(jiti@2.7.0)))(svelte@5.56.8(@typescript-eslint/types@8.66.0))(typescript@6.0.3)(vite@8.2.0(@types/node@26.1.2)(jiti@2.7.0)))
@@ -139,6 +142,13 @@ packages:
   '@html-eslint/core@0.64.0':
     resolution: {integrity: sha512-Iz5x4jRDmcmpdYsYjcw213J/pXZjB8RZ7wIpAmtqGuf7IJX2JwyhfJvTqvuSFYtvHKMMl7Jt0LzmmTklaMuFsQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@html-eslint/eslint-plugin-svelte@0.64.0':
+    resolution: {integrity: sha512-v4QhWGNLzVrqhpg9m0fnyt/F3a970q6CfkojRbhq1oZJWZ1JZDHW9SEoQqMUJ/afTDvx4mYshWHvmTjiAAywRw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=8.0.0 || ^10.0.0-0'
+      svelte-eslint-parser: ^1.0.0
 
   '@html-eslint/eslint-plugin@0.64.0':
     resolution: {integrity: sha512-Il2z0Pd28/NrHtgALeHiB6uGxRLxxh7WGAOo9k1x18hzN8ibzVXMvswODE3SDrxIzNS2CLJHtqd4VXjU77lL9w==}
@@ -1380,6 +1390,12 @@ snapshots:
     dependencies:
       '@html-eslint/types': 0.64.0
       html-standard: 0.0.13
+
+  '@html-eslint/eslint-plugin-svelte@0.64.0(eslint@10.8.0(jiti@2.7.0))(svelte-eslint-parser@1.8.0(svelte@5.56.8(@typescript-eslint/types@8.66.0)))':
+    dependencies:
+      '@html-eslint/core': 0.64.0
+      eslint: 10.8.0(jiti@2.7.0)
+      svelte-eslint-parser: 1.8.0(svelte@5.56.8(@typescript-eslint/types@8.66.0))
 
   '@html-eslint/eslint-plugin@0.64.0(eslint@10.8.0(jiti@2.7.0))':
     dependencies:

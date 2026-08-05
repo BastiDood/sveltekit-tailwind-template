@@ -23,6 +23,7 @@
     "@eslint/css": "^1.4.0",
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.64.0",
+    "@html-eslint/eslint-plugin-svelte": "^0.64.0",
     "@sveltejs/adapter-static": "^3.0.10",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.1.2",
