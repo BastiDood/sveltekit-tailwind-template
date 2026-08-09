@@ -10,8 +10,8 @@ import ts from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
 import { tailwind4 } from 'tailwind-csstree';
 
-const TYPED_FILES = ['src/**/*.{js,ts,svelte}', '*.{js,ts}'];
-const SVELTE_FILES = ['src/**/*.svelte', 'src/**/*.svelte.{js,ts}'];
+const TYPED_FILES = ['src/**/*.{{j,t}s,svelte}', '*.{j,t}s'];
+const SVELTE_FILES = ['src/**/*.svelte', 'src/**/*.svelte.{j,t}s'];
 const TYPED_PARSER_OPTIONS = {
   projectService: true,
   extraFileExtensions: ['.svelte'],
