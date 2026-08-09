@@ -10,8 +10,6 @@ import ts from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
 import { tailwind4 } from 'tailwind-csstree';
 
-const TYPED_FILES = ['src/**/*.{{j,t}s,svelte}', '*.{j,t}s'];
-const SVELTE_FILES = ['src/**/*.svelte', 'src/**/*.svelte.{j,t}s'];
 const TYPED_PARSER_OPTIONS = {
   projectService: true,
   extraFileExtensions: ['.svelte'],
@@ -72,7 +70,7 @@ export default defineConfig(
     },
   },
   {
-    files: TYPED_FILES,
+    files: ['src/**/*.{{j,t}s,svelte}', '*.{j,t}s'],
     extends: [
       js.configs.recommended,
       ...ts.configs.strictTypeChecked,
@@ -229,7 +227,7 @@ export default defineConfig(
     },
   },
   {
-    files: SVELTE_FILES,
+    files: ['src/**/*.svelte', 'src/**/*.svelte.{j,t}s'],
     extends: [
       ...svelte.configs.recommended,
       htmlSvelte.configs.recommended,
@@ -251,6 +249,17 @@ export default defineConfig(
             'Refactor the code so that side effects are performed in the event handlers themselves, not in effect synchronization. This is incorrect and poor practice that leads to buggy reactivity patterns. Avoid `$effect` at all costs!',
         },
       ],
+    },
+  },
+  {
+    // TODO: Remove this once there's a way for type-aware lints to detect the `.svelte-kit/` types.
+    files: ['src/hooks{,.{client,server}}.{j,t}s', 'src/routes/**/+*.{{j,t}s,svelte}'],
+    rules: {
+      '@typescript-eslint/no-unsafe-argument': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off',
+      '@typescript-eslint/no-unsafe-member-access': 'off',
+      '@typescript-eslint/no-unsafe-return': 'off',
     },
   },
 );
