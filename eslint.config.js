@@ -13,7 +13,7 @@ import { tailwind4 } from 'tailwind-csstree';
 const TYPED_FILES = ['src/**/*.{js,ts,svelte}', '*.{js,ts}'];
 const SVELTE_FILES = ['src/**/*.svelte', 'src/**/*.svelte.{js,ts}'];
 const TYPED_PARSER_OPTIONS = {
-  projectService: { allowDefaultProject: ['eslint.config.js'] },
+  projectService: true,
   extraFileExtensions: ['.svelte'],
 };
 
