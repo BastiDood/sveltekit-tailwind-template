@@ -27,10 +27,10 @@ pnpm preview
 
 ```bash
 # Check Formatting
-pnpm fmt # prettier
+pnpm fmt # oxfmt --check
 
 # Apply Formatting Auto-fix
-pnpm fmt:fix # prettier --write
+pnpm fmt:fix # oxfmt
 
 # Check Linting Rules
 pnpm lint:eslint # eslint

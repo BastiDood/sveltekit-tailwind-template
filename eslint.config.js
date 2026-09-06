@@ -2,7 +2,6 @@ import css from '@eslint/css';
 import globals from 'globals';
 import html from '@html-eslint/eslint-plugin';
 import htmlSvelte from '@html-eslint/eslint-plugin-svelte';
-import imsort from '@bastidood/eslint-plugin-imsort';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
@@ -75,13 +74,10 @@ export default defineConfig(
       js.configs.recommended,
       ...ts.configs.strictTypeChecked,
       ...ts.configs.stylisticTypeChecked,
-      imsort.configs.all,
       prettier,
     ],
     languageOptions: { parserOptions: TYPED_PARSER_OPTIONS },
-    plugins: { '@bastidood/imsort': imsort },
     rules: {
-      '@bastidood/imsort/sort-imports': 'error',
       '@typescript-eslint/class-methods-use-this': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
       '@typescript-eslint/default-param-last': 'error',

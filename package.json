@@ -8,8 +8,8 @@
     "build": "vite build",
     "prepare": "svelte-kit sync",
     "preview": "vite preview",
-    "fmt": "prettier . --experimental-cli --cache-location .prettiercache --check",
-    "fmt:fix": "prettier . --experimental-cli --cache-location .prettiercache --write",
+    "fmt": "oxfmt --check .",
+    "fmt:fix": "oxfmt .",
     "lint": "pnpm run --workspace-root --parallel /lint:/",
     "lint:eslint": "eslint --cache --concurrency auto",
     "lint:svelte": "svelte-check --fail-on-warnings"
@@ -19,7 +19,6 @@
     "svelte": "^5.56.8"
   },
   "devDependencies": {
-    "@bastidood/eslint-plugin-imsort": "^0.12.0",
     "@eslint/css": "^1.4.0",
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.64.0",
@@ -31,9 +30,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.22.0",
     "globals": "^16.5.0",
-    "prettier": "^3.9.6",
-    "prettier-plugin-svelte": "^4.1.1",
-    "prettier-plugin-tailwindcss": "^0.8.1",
+    "oxfmt": "^0.66.0",
     "svelte-check": "^4.7.5",
     "tailwind-csstree": "^0.3.3",
     "tailwindcss": "^4.3.3",
