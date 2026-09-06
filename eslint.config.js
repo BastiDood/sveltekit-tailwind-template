@@ -1,13 +1,13 @@
 import css from '@eslint/css';
-import globals from 'globals';
+import js from '@eslint/js';
 import html from '@html-eslint/eslint-plugin';
 import htmlSvelte from '@html-eslint/eslint-plugin-svelte';
-import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
-import ts from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
+import globals from 'globals';
 import { tailwind4 } from 'tailwind-csstree';
+import ts from 'typescript-eslint';
 
 const TYPED_PARSER_OPTIONS = {
   projectService: true,
