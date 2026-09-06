@@ -4,6 +4,12 @@ engineStrict: true
 
 minimumReleaseAgeStrict: true
 
+tasks:
+  lint:
+    dependsOn:
+      - lint:eslint
+      - lint:svelte
+
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - chokidar@4.0.3

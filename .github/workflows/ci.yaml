@@ -26,6 +26,6 @@ jobs:
       - name: Check Formatters
         run: pnpm fmt
       - name: Run All Lints in Parallel
-        run: pnpm lint
+        run: pnpm --recursive --workspace-root --if-present run lint
       - name: Build Website
         run: pnpm build

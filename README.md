@@ -37,5 +37,5 @@ pnpm lint:eslint # eslint
 pnpm lint:svelte # svelte-check
 
 # Check All Lints in Parallel
-pnpm lint
+pnpm --recursive --workspace-root --if-present run lint
 ```

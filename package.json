@@ -10,7 +10,6 @@
     "preview": "vite preview",
     "fmt": "oxfmt --check .",
     "fmt:fix": "oxfmt .",
-    "lint": "pnpm run --workspace-root --parallel /lint:/",
     "lint:eslint": "eslint --cache --concurrency auto",
     "lint:svelte": "svelte-check --fail-on-warnings"
   },
