@@ -5,6 +5,11 @@ engineStrict: true
 minimumReleaseAgeStrict: true
 
 tasks:
+  ci:
+    dependsOn:
+      - build
+      - fmt
+      - lint
   lint:
     dependsOn:
       - lint:eslint
