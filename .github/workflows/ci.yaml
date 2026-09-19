@@ -22,7 +22,7 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Check Formatters
         run: pnpm fmt
       - name: Run All Lints in Parallel
