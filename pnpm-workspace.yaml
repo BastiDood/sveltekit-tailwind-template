@@ -1,4 +1,4 @@
-cleanupUnusedCatalogs: true
+catalogPrune: true
 
 engineStrict: true
 
