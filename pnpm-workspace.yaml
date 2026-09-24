@@ -1,8 +1,12 @@
+autoDedupe: true
+
 catalogPrune: true
 
 engineStrict: true
 
 minimumReleaseAgeStrict: true
+
+saveTypes: true
 
 tasks:
   ci:
