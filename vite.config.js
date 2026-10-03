@@ -8,12 +8,6 @@ export default defineConfig({
     tailwind(),
     sveltekit({
       adapter: adapter({ fallback: '404.html' }),
-      typescript: {
-        config({ include }) {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
-          include.push('../drizzle.config.js', '../eslint.config.js');
-        },
-      },
     }),
   ],
 });

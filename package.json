@@ -2,6 +2,9 @@
   "name": "sveltekit",
   "type": "module",
   "private": true,
+  "imports": {
+    "#lib/*": "./src/lib/*"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -20,7 +23,7 @@
     "lint:svelte": "svelte-check --fail-on-warnings"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/kit": "^3.0.0",
     "svelte": "^5.57.1"
   },
   "devDependencies": {
@@ -28,7 +31,7 @@
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.66.1",
     "@html-eslint/eslint-plugin-svelte": "^0.66.1",
-    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/adapter-static": "^4.0.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.6.4",
     "eslint": "^10.11.0",

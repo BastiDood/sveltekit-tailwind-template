@@ -175,7 +175,7 @@ export default defineConfig(
             {
               group: ['../**'],
               message:
-                'Use `$lib` imports for cross-directory imports. Parent traversal is banned.',
+                'Use `#lib` subpath imports for cross-directory imports. Parent traversal is banned.',
             },
           ],
         },
