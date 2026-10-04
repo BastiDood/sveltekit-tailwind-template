@@ -11,13 +11,21 @@ saveTypes: true
 tasks:
   ci:
     dependsOn:
-      - build
       - fmt
       - lint
+  fmt:
+    dependsOn:
+      - build
   lint:
     dependsOn:
       - lint:eslint
       - lint:svelte
+  lint:eslint:
+    dependsOn:
+      - build
+  lint:svelte:
+    dependsOn:
+      - build
 
 trustPolicy: no-downgrade
 trustPolicyExclude:
