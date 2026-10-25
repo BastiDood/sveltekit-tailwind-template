@@ -23,27 +23,27 @@
     "lint:svelte": "svelte-check --fail-on-warnings"
   },
   "dependencies": {
-    "@sveltejs/kit": "^3.0.0",
-    "svelte": "^5.57.1"
+    "@sveltejs/kit": "^3.1.0",
+    "svelte": "^5.57.2"
   },
   "devDependencies": {
-    "@eslint/css": "^2.0.0",
+    "@eslint/css": "^2.0.1",
     "@eslint/js": "^10.0.1",
-    "@html-eslint/eslint-plugin": "^0.66.1",
-    "@html-eslint/eslint-plugin-svelte": "^0.66.1",
+    "@html-eslint/eslint-plugin": "^0.67.0",
+    "@html-eslint/eslint-plugin-svelte": "^0.67.0",
     "@sveltejs/adapter-static": "^4.0.0",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.6.4",
-    "eslint": "^10.11.0",
+    "@types/node": "^26.6.5",
+    "eslint": "^10.13.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.23.0",
+    "eslint-plugin-svelte": "^3.23.1",
     "globals": "^16.5.0",
-    "oxfmt": "^0.71.0",
-    "svelte-check": "^4.7.6",
+    "oxfmt": "^0.74.0",
+    "svelte-check": "^4.7.7",
     "tailwind-csstree": "^0.4.1",
     "tailwindcss": "^4.3.3",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.71.0",
-    "vite": "^8.3.2"
+    "typescript-eslint": "^8.72.0",
+    "vite": "^8.3.5"
   }
 }

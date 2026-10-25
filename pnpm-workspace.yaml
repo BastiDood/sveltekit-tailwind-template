@@ -4,6 +4,9 @@ catalogPrune: true
 
 engineStrict: true
 
+lockfile:
+  includeResolutionSettings: true
+
 minimumReleaseAgeStrict: true
 
 saveTypes: true
