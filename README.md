@@ -35,7 +35,4 @@ pnpm fmt:fix # oxfmt
 # Check Linting Rules
 pnpm lint:eslint # eslint
 pnpm lint:svelte # svelte-check
-
-# Check All Lints in Parallel
-pnpm --recursive --workspace-root --if-present run lint
 ```

@@ -20,25 +20,6 @@ overrides:
 
 saveTypes: true
 
-tasks:
-  ci:
-    dependsOn:
-      - fmt
-      - lint
-  fmt:
-    dependsOn:
-      - build
-  lint:
-    dependsOn:
-      - lint:eslint
-      - lint:svelte
-  lint:eslint:
-    dependsOn:
-      - build
-  lint:svelte:
-    dependsOn:
-      - build
-
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - chokidar@4.0.3
