@@ -9,6 +9,15 @@ lockfile:
 
 minimumReleaseAgeStrict: true
 
+overrides:
+  '@eslint/plugin-kit': ^0.7.3
+  eslint-scope: ^9.1.2
+  eslint-visitor-keys: ^5.0.1
+  espree: ^11.2.0
+  ignore: ^7.0.14
+  lightningcss: ^1.33.0
+  magic-string: ^1.4.3
+
 saveTypes: true
 
 tasks:
