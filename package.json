@@ -23,27 +23,27 @@
     "lint:svelte": "svelte-check --fail-on-warnings"
   },
   "dependencies": {
-    "@sveltejs/kit": "^3.1.0",
-    "svelte": "^5.57.2"
+    "@sveltejs/kit": "^3.1.1",
+    "svelte": "^5.57.3"
   },
   "devDependencies": {
     "@eslint/css": "^2.0.1",
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.67.0",
     "@html-eslint/eslint-plugin-svelte": "^0.67.0",
-    "@sveltejs/adapter-static": "^4.0.0",
+    "@sveltejs/adapter-static": "^4.0.1",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.6.5",
-    "eslint": "^10.13.0",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.23.1",
     "globals": "^16.5.0",
-    "oxfmt": "^0.74.0",
+    "oxfmt": "^0.75.0",
     "svelte-check": "^4.7.7",
-    "tailwind-csstree": "^0.4.1",
+    "tailwind-csstree": "^0.4.2",
     "tailwindcss": "^4.3.3",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.72.0",
+    "typescript-eslint": "^8.72.1",
     "vite": "^8.3.5"
   }
 }
