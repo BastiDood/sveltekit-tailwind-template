@@ -1,15 +1,5 @@
 {
-  "extends": "$app/tsconfig",
-  "include": ["src/**/*", "*.js", "*.ts"],
-  "exclude": ["src/service-worker"],
-  "compilerOptions": {
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitOverride": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
-  }
+	"extends": ["$app/tsconfig", "@bastidood/tsconfig"],
+	"include": ["src/**/*", "*.js", "*.ts"],
+	"exclude": ["src/service-worker"]
 }

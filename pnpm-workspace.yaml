@@ -7,6 +7,9 @@ engineStrict: true
 lockfile:
   includeResolutionSettings: true
 
+minimumReleaseAgeExclude:
+  - '@bastidood/*'
+
 minimumReleaseAgeStrict: true
 
 overrides:

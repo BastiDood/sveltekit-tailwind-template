@@ -4,10 +4,10 @@ import tailwind from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [
-    tailwind(),
-    sveltekit({
-      adapter: adapter({ fallback: '404.html' }),
-    }),
-  ],
+	plugins: [
+		tailwind(),
+		sveltekit({
+			adapter: adapter({ fallback: '404.html' }),
+		}),
+	],
 });
